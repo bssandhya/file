@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <h1>TASK-1</h1>
+    <div class="first_box">
+        <h2>JQUERY</h2>
+        <P>using toggle method</P>
+    </div>
+
+
+    <div class="second_box">
+        <h2>SHOW METHOD</h2>
+        <P> using show method</P>
+    </div>
+
+
+    <div class="third_box">
+        <h2>HIDE METHOD</h2>
+        <P>using hide method</P>
+    </div>
+
+
+
+    <form action="#">
+        <fieldset>
+            <legend>my form</legend>
+            <label for="name">name</label>
+            <input type="text" name="name" placeholder="enter name"><br><br>
+
+            <label for="email">e-mail</label>
+            <input type="mail" name="email" placeholder="enter mail"><br><br>
+
+            <label for="password">password</label>
+            <input type="password" name="password" placeholder="enter password">
+            <span>enter strong password</span><br><br>
+
+            <input type="checkbox" name="react-js" value="react-js">
+            <label for="react-js">react-js</label>
+
+            <input type="checkbox" name="ui-development" value="ui-development">
+            <label for="ui-development">ui-development</label>
+
+            <input type="checkbox" name="angular" value="angular">
+            <label for="angular">angular</label><br><br>
+
+            <input type="submit" value="submit">
+
+
+        </fieldset>
+    </form>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(".first_box h2").click(function() {
+            $(".first_box p").toggle();
+        });
+        // $("h2").on("mouseenter mouseleave", function(event) {
+        //     $(this).toggleClass("over");
+        // });
+
+        $(".second_box h2").click(function() {
+            $(".second_box p").show();
+        });
+
+        $(".third_box h2").click(function() {
+            $(".third_box p").hide();
+        });
+
+        $("form").submit(function() {
+            alert("Submitted");
+        });
+
+        $('input[type=mail]').keypress(function() {
+            alert("enter correct format");
+        });
+
+        $("input[type=text]").keydown(function() {
+            $("input[type=text]").css("background", "lightblue");
+        });
+
+        $("input[type=text]").keyup(function() {
+            $("input[type=text]").css("background", "white");
+        });
+
+        $("input[type=password]").focus(function() {
+            $("span").css("display", "inline");
+        });
+
+        $("input[type=password]").blur(function() {
+            $("span").css("display", "none");
+        });
+
+        $("input[type=checkbox]").change(function(e) {
+            alert("select atleast 2 courses");
+        });
+
+        $(window).resize(function() {
+            alert("window is resized");
+        });
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* 
+body {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+} */
+
+.first_box {
+    margin: 10px 10px;
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+.second_box {
+    margin: 10px 10px;
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+.third_box {
+    margin: 10px 10px;
+    border: 2px solid gray;
+    padding: 10px;
+}
+
+h2 {
+    border: 2px;
+    background-color: rgb(66, 66, 209);
+    color: white;
+    padding: 10px;
+}
+
+h2:hover {
+    background-color: grey;
+}
+
+p {
+    border: 1px solid black;
+    display: none;
+    padding: 10px;
+    /* background-color: rgb(199, 118, 118); */
+    font-size: 2em;
+}
+
+.second_box h2 {
+    background-color: lightskyblue;
+    color: white;
+    padding: 10px;
+    transition: ease-in-out 1s;
+}
+
+.second_box h2:hover {
+    background-color: rgb(38, 130, 187);
+}
+
+.third_box h2 {
+    background-color: rgb(100, 19, 230);
+    color: white;
+    padding: 10px;
+    transition: ease-in-out 1s;
+}
+
+.third_box h2:hover {
+    background-color: rgb(109, 73, 167);
+}
+
+.third_box p {
+    border: 1px solid black;
+    padding: 10px;
+    /* background-color: rgb(199, 118, 118); */
+    font-size: 2em;
+    display: block;
+}
+
+form {
+    /* background-color: burlywood; */
+    padding: 10px;
+    margin: 10px;
+    /* box-shadow: 5px; */
+}
+
+span {
+    display: none;
+}
